@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment
 import com.example.project_jelajah_riau.Home.HomeFragment
 import com.example.project_jelajah_riau.Jelajah.JelajahFragment
 import com.example.project_jelajah_riau.More.MoreFragment
+import com.example.project_jelajah_riau.Peta.PetaFragment
+import com.example.project_jelajah_riau.Rencana.RencanaFragment
 import com.example.project_jelajah_riau.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -34,6 +36,14 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.jelajah -> {
                     replaceFragment(JelajahFragment())
+                    true
+                }
+                R.id.peta -> {
+                    replaceFragment(PetaFragment())
+                    true
+                }
+                R.id.rencana -> {
+                    replaceFragment(RencanaFragment())
                     true
                 }
                 R.id.more -> {
