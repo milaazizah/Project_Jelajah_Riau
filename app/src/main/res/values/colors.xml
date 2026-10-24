@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hijau_rimba">#0F5C4D</color>
+    <color name="hijau_daun">#DCEFE6</color>
+    <color name="kuning_lancang">#F2B705</color>
+    <color name="merah_bata">#B8402F</color>
+    <color name="biru_sungai">#1F6F8B</color>
+    <color name="krem_pasir">#FBF6EA</color>
+    <color name="permukaan">#FFFFFF</color>
+    <color name="teks_utama">#1E2A27</color>
+    <color name="teks_sekunder">#5B6B66</color>
+    <color name="garis_batas">#E3DDCB</color>
+
+</resources>

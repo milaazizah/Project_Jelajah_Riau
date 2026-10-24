@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/beranda" android:icon="@drawable/ic_home" android:title="Beranda" />
+    <item android:id="@+id/jelajah" android:icon="@drawable/ic_explore" android:title="Jelajah" />
+    <item android:id="@+id/peta" android:icon="@drawable/ic_map" android:title="Peta" />
+    <item android:id="@+id/rencana" android:icon="@drawable/ic_plan" android:title="Rencana" />
+    <item android:id="@+id/more" android:icon="@drawable/ic_more" android:title="Lainnya" />
+</menu>

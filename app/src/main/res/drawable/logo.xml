@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo Jelajah Riau: pin lokasi krem + perahu layar kuning + gelombang hijau -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="#FBF6EA"
+        android:pathData="M50,8 C72,8 90,26 90,48 C90,72 66,92 50,114 C34,92 10,72 10,48 C10,26 28,8 50,8 Z" />
+    <path
+        android:fillColor="#F2B705"
+        android:pathData="M48,22 L48,48 L30,48 Z" />
+    <path
+        android:fillColor="#F2B705"
+        android:pathData="M52,32 L52,48 L64,48 Z" />
+    <path
+        android:fillColor="#F2B705"
+        android:pathData="M26,50 L74,50 L68,58 L32,58 Z" />
+    <path
+        android:strokeColor="#0F5C4D"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M28,68 C33,63 38,73 43,68 C48,63 53,73 58,68 C63,63 68,73 72,68" />
+    <path
+        android:strokeColor="#0F5C4D"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M32,77 C37,72 42,82 47,77 C52,72 57,82 62,77 C65,75 67,76 69,77" />
+</vector>

@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Project_Jelajah_Riau" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hijau_rimba</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/hijau_daun</item>
+        <item name="colorOnPrimaryContainer">@color/hijau_rimba</item>
+        <item name="colorSecondary">@color/kuning_lancang</item>
+        <item name="colorOnSecondary">@color/teks_utama</item>
+        <item name="colorTertiary">@color/biru_sungai</item>
+        <item name="colorError">@color/merah_bata</item>
+        <item name="colorSurface">@color/permukaan</item>
+        <item name="colorOnSurface">@color/teks_utama</item>
+        <item name="colorOutline">@color/garis_batas</item>
+        <item name="android:colorBackground">@color/krem_pasir</item>
+        <item name="android:windowBackground">@color/krem_pasir</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textColor">@color/teks_utama</item>
+        <item name="android:fontFamily">@font/jakarta_sans_regular</item>
+    </style>
+
+    <style name="Theme.Project_Jelajah_Riau" parent="Base.Theme.Project_Jelajah_Riau" />
+    <style name="Teks" />
+    <style name="Teks.Display">
+        <item name="android:fontFamily">@font/jakarta_sans_extrabold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/teks_utama</item>
+    </style>
+    <style name="Teks.H1">
+        <item name="android:fontFamily">@font/jakarta_sans_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/teks_utama</item>
+    </style>
+    <style name="Teks.H2">
+        <item name="android:fontFamily">@font/jakarta_sans_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/teks_utama</item>
+    </style>
+    <style name="Teks.H3">
+        <item name="android:fontFamily">@font/jakarta_sans_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/teks_utama</item>
+    </style>
+    <style name="Teks.Isi">
+        <item name="android:fontFamily">@font/jakarta_sans_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/teks_utama</item>
+    </style>
+    <style name="Teks.Tombol">
+        <item name="android:fontFamily">@font/jakarta_sans_semibold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Teks.Metadata">
+        <item name="android:fontFamily">@font/jakarta_sans_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/teks_sekunder</item>
+    </style>
+
+    <style name="Badge">
+        <item name="android:fontFamily">@font/jakarta_sans_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+</resources>
