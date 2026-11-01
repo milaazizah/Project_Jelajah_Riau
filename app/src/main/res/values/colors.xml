@@ -12,5 +12,10 @@
     <color name="teks_utama">#1E2A27</color>
     <color name="teks_sekunder">#5B6B66</color>
     <color name="garis_batas">#E3DDCB</color>
+    <color name="tutorial_blue">#1F6F8B</color>
+    <color name="tutorial_green">#2E8B6A</color>
+    <color name="tutorial_teal">#0F5C4D</color>
+    <color name="abu_gelap">#99FFFFFF</color>
+    <color name="dot_selected">#FFFFFFFF</color>
 
 </resources>

@@ -7,18 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".Home.HomeFragment">
 
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:background="@drawable/bg_header_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- membungkus toolbar -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/hijau_rimba"
+            android:background="@android:color/transparent"
             app:subtitleTextColor="@color/hijau_daun"
             app:titleTextColor="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -93,60 +104,49 @@
                 android:layout_marginTop="12dp"
                 android:scrollbars="none">
 
-                <LinearLayout
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupKategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    app:singleLine="true"
+                    app:singleSelection="true">
 
-                    <Button
-                        android:id="@+id/btnSemua"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSemua"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:backgroundTint="@color/hijau_rimba"
-                        android:text="Semua"
-                        android:textColor="@color/white" />
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Semua" />
 
-                    <Button
-                        android:id="@+id/btnAlam"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAlam"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Alam"
-                        android:textColor="@color/hijau_rimba" />
+                        android:layout_height="wrap_content"
+                        android:text="Alam" />
 
-                    <Button
-                        android:id="@+id/btnSejarah"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSejarah"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Sejarah"
-                        android:textColor="@color/hijau_rimba" />
+                        android:layout_height="wrap_content"
+                        android:text="Sejarah" />
 
-                    <Button
-                        android:id="@+id/btnKuliner"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipKuliner"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Kuliner"
-                        android:textColor="@color/hijau_rimba" />
+                        android:layout_height="wrap_content"
+                        android:text="Kuliner" />
 
-                    <Button
-                        android:id="@+id/btnDesaWisata"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipDesaWisata"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Desa Wisata"
-                        android:textColor="@color/hijau_rimba" />
-                </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:text="Desa Wisata" />
+                </com.google.android.material.chip.ChipGroup>
             </HorizontalScrollView>
 
             <TextView
@@ -305,6 +305,55 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <TextView
+                style="@style/Teks.H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Jelajah per daerah" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:columnCount="3"
+                app:useDefaultMargins="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid1"
+                    android:text="Pekanbaru"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid2"
+                    android:text="Kampar"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid3"
+                    android:text="Siak"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid4"
+                    android:text="Bengkalis"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid5"
+                    android:text="Dumai"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGrid6"
+                    android:text="Rokan Hulu"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill_horizontal" />
+
+            </androidx.gridlayout.widget.GridLayout>
 
             <TextView
                 style="@style/Teks.H2"

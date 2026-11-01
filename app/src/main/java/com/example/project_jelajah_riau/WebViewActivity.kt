@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.project_jelajah_riau.databinding.ActivityWebViewBinding
 
-class WebViewActivity : AppCompatActivity() {
+class   WebViewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWebViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +32,14 @@ class WebViewActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
             setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+        }
+        // Agar Toolbar hide/show saat scroll web
+        binding.webView.setOnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
+            if (scrollY > oldScrollY) {
+                binding.appBar.setExpanded(false, true) // sembunyikan
+            } else if (scrollY < oldScrollY) {
+                binding.appBar.setExpanded(true, true) // tampilkan
+            }
         }
     }
 

@@ -35,6 +35,9 @@ android {
 }
 
 dependencies {
+    implementation("androidx.gridlayout:gridlayout:1.0.0")        // GridLayout
+    implementation("androidx.viewpager2:viewpager2:1.1.0")        // ViewPager2
+    implementation("com.tbuonomo:dotsindicator:5.1.0")            // DotsIndicator
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
