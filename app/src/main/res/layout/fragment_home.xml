@@ -186,7 +186,7 @@
                             <FrameLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:background="@drawable/bg_foto">
+                                android:background="@drawable/candi">
 
                                 <TextView
                                     style="@style/Badge"
@@ -254,7 +254,7 @@
                             <FrameLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
-                                android:background="@drawable/bg_foto">
+                                android:background="@drawable/ulukasok">
 
                                 <TextView
                                     style="@style/Badge"
@@ -318,7 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:columnCount="3"
+                app:columnCount="2"
                 app:useDefaultMargins="true">
 
                 <com.google.android.material.button.MaterialButton

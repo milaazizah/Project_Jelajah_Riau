@@ -77,34 +77,43 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/btnKampar"
-                        style="@style/Teks.Tombol"
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupKategori"
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:backgroundTint="@color/hijau_rimba"
-                        android:text="Kampar"
-                        android:textColor="@color/white" />
+                        android:layout_height="wrap_content"
+                        app:singleLine="true"
+                        app:singleSelection="true">
 
-                    <Button
-                        android:id="@+id/btnSiak"
-                        style="@style/Teks.Tombol"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Siak"
-                        android:textColor="@color/hijau_rimba" />
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSemua"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Semua" />
 
-                    <Button
-                        android:id="@+id/btnBengkalis"
-                        style="@style/Teks.Tombol"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="8dp"
-                        android:backgroundTint="@color/hijau_daun"
-                        android:text="Bengkalis"
-                        android:textColor="@color/hijau_rimba" />
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipAlam"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kampar" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipSejarah"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Siak" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipKuliner"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bengkalis" />
+
+                    </com.google.android.material.chip.ChipGroup>
                 </LinearLayout>
             </HorizontalScrollView>
 
