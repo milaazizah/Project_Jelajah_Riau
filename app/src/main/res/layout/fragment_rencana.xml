@@ -1,101 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/krem_pasir"
     tools:context=".Rencana.RencanaFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/Teks.H2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Rencana Perjalanan"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/hijau_rimba"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Rencana"
+        app:titleTextColor="@color/white" />
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridMenu"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="16dp"
-        app:columnCount="2"
-        app:useDefaultMargins="true"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tabIndicatorColor="@color/hijau_rimba"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/hijau_rimba"
+        app:tabTextColor="@color/teks_sekunder" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid1"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Pekanbaru"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid2"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Kampar"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid3"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Siak"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid4"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Bengkalis"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid5"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Dumai"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnGrid6"
-            style="@style/Teks.Tombol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/hijau_rimba"
-            android:text="Rokan Hulu"
-            android:textColor="@color/white"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill_horizontal" />
-
-    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
